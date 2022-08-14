@@ -48,7 +48,7 @@ def save_password():
     Password_Array = []
     if getPassword.get() != "":
         Password_Array.append(getPassword.get())
-        with open('Passwords.txt', 'a') as f:
+        with open('Generated Passwords.txt', 'a') as f:
             for item in Password_Array:
                 f.write("%s\n" % item)
         messageboxes = tkinter.Label(master, text='Password saved', font='Ubuntu 12', width=15)
